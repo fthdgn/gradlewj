@@ -1,0 +1,5 @@
+import org.gradle.internal.jvm.Jvm
+
+def currentJvm = Jvm.current()
+println "Java version: ${currentJvm.getJavaVersion()}"
+println "Java home: ${currentJvm.getJavaHome().getAbsolutePath()}"
